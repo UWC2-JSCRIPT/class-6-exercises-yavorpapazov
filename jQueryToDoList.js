@@ -21,9 +21,9 @@ $(document).ready(function() {
     // rest here...
     let $ulElement = $('.today-list')
     let $liElement = $('<li>')
-    $liElement.on('click', lineThrough)
     let $spanElement = $('<span>')
     $spanElement.text(text)
+    $spanElement.on('click', lineThrough)
     let $aElement = $('<a>')
     $aElement.addClass('delete')
     $aElement.text('Delete')
